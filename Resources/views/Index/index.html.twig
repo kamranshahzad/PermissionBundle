@@ -1,0 +1,120 @@
+{% extends themes %}
+
+
+{% block body %}
+
+
+<form action="{{ path('permission_index') }}" method="post" {{ form_enctype(form) }} >
+    {# form_widget(form) #}
+</form>
+
+
+    <h3>Role Permissions</h3>
+    <table class="table table-striped" style="font-size:13px;">
+        <caption>Optional table caption.</caption>
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>ROLE_ADMIN</th>
+            <th>ROLE_USER</th>
+            <th>ROLE_MODERATOR</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><b>Users</b></td>
+            <td>
+                <p style="margin-left:-5px;color:red;">
+                    <input type="checkbox"> <b>Full Access</b>
+                </p>
+                <input type="checkbox"> Read/View <br/>
+                <input type="checkbox"> Edit <br/>
+                <input type="checkbox"> Remove <br/>
+                <input type="checkbox"> Add/Create <br/>
+            </td>
+            <td>
+                <p style="margin-left:-5px;color:red;">
+                    <input type="checkbox"> <b>Full Access</b>
+                </p>
+                <input type="checkbox"> Read/View <br/>
+                <input type="checkbox"> Edit <br/>
+                <input type="checkbox"> Remove <br/>
+                <input type="checkbox"> Add/Create <br/>
+            </td>
+            <td>
+                <p style="margin-left:-5px;color:red;">
+                    <input type="checkbox"> <b>Full Access</b>
+                </p>
+                <input type="checkbox"> Read/View <br/>
+                <input type="checkbox"> Edit <br/>
+                <input type="checkbox"> Remove <br/>
+                <input type="checkbox"> Add/Create <br/>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Organizations</b></td>
+            <td>
+                <p style="margin-left:-5px;color:red;">
+                    <input type="checkbox"> <b>Full Access</b>
+                </p>
+                <input type="checkbox"> Read/View <br/>
+                <input type="checkbox"> Edit <br/>
+                <input type="checkbox"> Remove <br/>
+                <input type="checkbox"> Add/Create <br/>
+            </td>
+            <td>
+                <p style="margin-left:-5px;color:red;">
+                    <input type="checkbox"> <b>Full Access</b>
+                </p>
+                <input type="checkbox"> Read/View <br/>
+                <input type="checkbox"> Edit <br/>
+                <input type="checkbox"> Remove <br/>
+                <input type="checkbox"> Add/Create <br/>
+            </td>
+            <td>
+                <p style="margin-left:-5px;color:red;">
+                    <input type="checkbox"> <b>Full Access</b>
+                </p>
+                <input type="checkbox"> Read/View <br/>
+                <input type="checkbox"> Edit <br/>
+                <input type="checkbox"> Remove <br/>
+                <input type="checkbox"> Add/Create <br/>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Contacts</b></td>
+            <td>
+                <p style="margin-left:-5px;color:red;">
+                    <input type="checkbox"> <b>Full Access</b>
+                </p>
+                <input type="checkbox"> Read/View <br/>
+                <input type="checkbox"> Edit <br/>
+                <input type="checkbox"> Remove <br/>
+                <input type="checkbox"> Add/Create <br/>
+            </td>
+            <td>
+                <p style="margin-left:-5px;color:red;">
+                    <input type="checkbox"> <b>Full Access</b>
+                </p>
+                <input type="checkbox"> Read/View <br/>
+                <input type="checkbox"> Edit <br/>
+                <input type="checkbox"> Remove <br/>
+                <input type="checkbox"> Add/Create <br/>
+            </td>
+            <td>
+                <p style="margin-left:-5px;color:red;">
+                    <input type="checkbox"> <b>Full Access</b>
+                </p>
+                <input type="checkbox"> Read/View <br/>
+                <input type="checkbox"> Edit <br/>
+                <input type="checkbox"> Remove <br/>
+                <input type="checkbox"> Add/Create <br/>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <hr/>
+    <button class="btn btn-info" >Save Permissions</button>
+
+{% endblock body %}

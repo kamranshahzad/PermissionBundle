@@ -1,0 +1,3 @@
+_cogilent_permission_url:
+    resource: "@CogilentPermissionBundle/Controller"
+    type: annotation

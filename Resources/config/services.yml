@@ -1,0 +1,10 @@
+parameters:
+  kamran.acl.twig.class: Kamran\PermissionBundle\Twig\Extension\AclExtension
+  kamran.acl.class: Kamran\PermissionBundle\Base\Acl
+
+services:
+
+  permissions.acl.twig:
+    class: %kamran.acl.twig.class%
+    tags:
+      - { name: twig.extension }

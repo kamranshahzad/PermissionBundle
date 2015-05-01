@@ -1,0 +1,30 @@
+{% extends themes %}
+
+
+{% block body %}
+
+    <style>
+        label { font-weight:normal;}
+    </style>
+
+
+
+    <h1>Role Permissions</h1>
+    <hr/>
+
+    <h4>Role : Administrator </h4>
+
+    <form action="{{ path('permission_role_view',{'id':id}) }}" method="post" {{ form_enctype(form) }} >
+
+        {{ form_widget(form) }}
+
+        {{ form_rest(form) }}
+
+        <input class="btn btn-info" type="submit" value="Save Permissions" />
+    </form>
+
+
+
+
+
+{% endblock body %}
